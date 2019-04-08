@@ -9,12 +9,7 @@ use Symfony\Component\DependencyInjection\Container;
  */
 class DefaultLocaleCallable
 {
-    private $locale;
-
-    public function __construct($locale)
-    {
-        $this->locale = $locale;
-    }
+    private $locale = 'en';
 
     public function __invoke()
     {
